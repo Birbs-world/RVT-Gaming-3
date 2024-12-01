@@ -1,0 +1,8 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"ae2:crystal_resonance_generator"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"modern_industrialization:electric_quarry"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"modern_industrialization:chemical_reactor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"modern_industrialization:steel_wiremill"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"modern_industrialization:bronze_drill"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

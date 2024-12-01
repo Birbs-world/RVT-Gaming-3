@@ -1,0 +1,145 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 5,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/allthemodium"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.allthemodium"
+  },
+  "stats": {
+    "main": {
+      "durability": 2500.0,
+      "armor_durability": 50.0,
+      "enchantment_value": 40.0,
+      "harvest_level": 7.0,
+      "harvest_speed": 20.0,
+      "melee_damage": 16.0,
+      "magic_damage": 4.0,
+      "attack_speed": 5,
+      "armor": 24.0,
+      "armor/helmet": 4.0,
+      "armor/chestplate": 9.0,
+      "armor/leggings": 7.0,
+      "armor/boots": 5.0,
+      "armor_toughness": 5.0,
+      "magic_armor": 9.0,
+      "ranged_damage": 1.0,
+      "ranged_speed": 1,
+      "rarity": 120.0
+    },
+    "rod": {
+      "durability": {
+        "mul2": 1.5
+      },
+      "rarity": 99.0
+    },
+    "tip": {
+      "durability": {
+        "add": 600.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:aquatic",
+        "level": 1
+      },
+      {
+        "name": "silentgear:brilliant",
+        "level": 1
+      },
+      {
+        "name": "silentgear:flame_ward",
+        "level": 1
+      },
+      {
+        "name": "silentgear:indestructible",
+        "level": 1
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:malleable",
+        "level": 4
+      },
+      {
+        "name": "silentgear:hard",
+        "level": 3
+      },
+      {
+        "name": "silentgear:brilliant",
+        "level": 1
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentgear:synergistic",
+        "level": 1
+      },
+      {
+        "name": "silentgear:brilliant",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#FFAE0D"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#FFAE0D"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_hc",
+        "color": "#FFAE0D"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#FFAE0D"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#FFAE0D"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#FFAE0D"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }
+}
