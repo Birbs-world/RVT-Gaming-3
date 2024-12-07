@@ -1,9 +1,12 @@
 {
   "mod_priorities": [
-    "minecraft",
+    "alltheores",
     "kubejs",
+    "minecraft",
     "mekanism",
-    "modern_industrialization"
+    "moremekanismprocessing",
+    "modern_industrialization",
+    "mysticalagriculture"
   ],
   "priority_overrides": {},
   "stone_variants": [

@@ -1,11 +1,11 @@
 {
   "__comment": "Instructions: https://blakesmods.com/docs/cucumber/tags-config",
   "c:silicons": "null",
-  "c:gems/apatite": "moremekanismprocessing:gem_apatite",
+  "c:gems/apatite": "null",
   "c:dusts/saltpeter": "null",
   "c:ingots/zinc": "alltheores:zinc_ingot",
   "c:gems/ruby": "alltheores:ruby",
-  "c:dusts/niter": "moremekanismprocessing:dust_niter",
+  "c:dusts/niter": "null",
   "c:gems/peridot": "alltheores:peridot",
   "c:ingots/constantan": "alltheores:constantan_ingot",
   "c:gems/sapphire": "alltheores:sapphire",

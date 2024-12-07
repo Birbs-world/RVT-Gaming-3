@@ -2,3 +2,7 @@
 !/config
 !/kubejs
 !/defaultconfigs
+.probe
+*.bak
+*jsconfig.json
+*dev-*

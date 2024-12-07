@@ -1,9 +1,16 @@
 {
   "custom_tags": {},
-  "tag_substitutions": {},
+  "tag_substitutions": {
+    "c:ores/aluminum": [
+      "c:ores/bauxite"
+    ],
+    "c:dusts/aluminum": [
+      "c:dusts/bauxite"
+    ]
+  },
   "item_tag_inheritance_mode": "ALLOW",
   "item_tag_inheritance": {},
   "block_tag_inheritance_mode": "ALLOW",
   "block_tag_inheritance": {},
-  "emi_strict_hiding": true
+  "emi_strict_hiding": false
 }

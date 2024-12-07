@@ -1,3 +1,21 @@
+	[items.boom_arrow]
+		#Should Boom Arrow explosions deal Block Damage [default: false]
+		block_damage = false
+		#Radius of Boom Arrow explosions [default: 3]
+		# Default: 3
+		# Range: 1 ~ 10
+		explosion_radius = 3
+
+	[items.mundabitur_dust]
+		#Should right-clicking a Creeper with Mundabitur Dust charge the Creeper [default: true]
+		charge_creeper = true
+
+	[items.xpetrified_orb]
+		#Experience Points the Orb grants on use [default: 91]
+		# Default: 91
+		# Range: 1 ~ 120000
+		experience_points = 91
+
 	[items.orb_of_temporary_flight]
 		#Flight Time the Orb grants (in ticks) [default: 6000]
 		# Default: 6000
@@ -21,24 +39,6 @@
 		# Default: 8
 		# Range: 1 ~ 10
 		soup_capacity = 8
-
-	[items.boom_arrow]
-		#Should Boom Arrow explosions deal Block Damage [default: false]
-		block_damage = false
-		#Radius of Boom Arrow explosions [default: 3]
-		# Default: 3
-		# Range: 1 ~ 10
-		explosion_radius = 3
-
-	[items.mundabitur_dust]
-		#Should right-clicking a Creeper with Mundabitur Dust charge the Creeper [default: true]
-		charge_creeper = true
-
-	[items.xpetrified_orb]
-		#Experience Points the Orb grants on use [default: 91]
-		# Default: 91
-		# Range: 1 ~ 120000
-		experience_points = 91
 
 	[items.eternal_stella]
 		#How many times the Eternal Stella can be used before breaking [default: 3]
