@@ -27,6 +27,8 @@
 		# Default: 20
 		# Range: > 1
 		check_recipe_ticks = 20
+		#Defines the _default_ color for EMI/JEI chance text color. (Hex color without alpha) Has to be defined both server and clientside!
+		chance_color = "#FFFFFF"
 
 	[general.Rendering]
 		#The time in milliseconds the structure requirement
@@ -45,6 +47,8 @@
 		#A folder name where MMR will load machine structure json.
 		#These folder must be under the "data/<namespace>" folder.
 		machine_directory = "machines"
+		#A list of folder names where MMR will load controller models json. These folders must be under the 'assets/namespace/models' folder.
+		model_folders = ["controller", "controllers"]
 
 	[energyHatch.tiny]
 		#Energy storage size of the energy hatch.
@@ -56,12 +60,6 @@
 		# Default: 128
 		# Range: > 1
 		transfer_rate = 128
-		#Defines the IC2 output-voltage tier. 
-		#Only affects the power the output hatches will output power as. 
-		#0 = 'ULV' = 8 EU/t, 1 = 'LV' = 32 EU/t, 2 = 'MV' = 128 EU/t, ...
-		# Default: 1
-		# Range: 0 ~ 12
-		ic2_tier = 1
 
 	[energyHatch.small]
 		#Energy storage size of the energy hatch.
@@ -73,12 +71,6 @@
 		# Default: 512
 		# Range: > 1
 		transfer_rate = 512
-		#Defines the IC2 output-voltage tier. 
-		#Only affects the power the output hatches will output power as. 
-		#0 = 'ULV' = 8 EU/t, 1 = 'LV' = 32 EU/t, 2 = 'MV' = 128 EU/t, ...2
-		# Default: 2
-		# Range: 0 ~ 12
-		ic2_tier = 2
 
 	[energyHatch.normal]
 		#Energy storage size of the energy hatch.
@@ -90,12 +82,6 @@
 		# Default: 512
 		# Range: > 1
 		transfer_rate = 512
-		#Defines the IC2 output-voltage tier. 
-		#Only affects the power the output hatches will output power as. 
-		#0 = 'ULV' = 8 EU/t, 1 = 'LV' = 32 EU/t, 2 = 'MV' = 128 EU/t, ...
-		# Default: 2
-		# Range: 0 ~ 12
-		ic2_tier = 2
 
 	[energyHatch.reinforced]
 		#Energy storage size of the energy hatch.
@@ -107,12 +93,6 @@
 		# Default: 2048
 		# Range: > 1
 		transfer_rate = 2048
-		#Defines the IC2 output-voltage tier. 
-		#Only affects the power the output hatches will output power as. 
-		#0 = 'ULV' = 8 EU/t, 1 = 'LV' = 32 EU/t, 2 = 'MV' = 128 EU/t, ...
-		# Default: 3
-		# Range: 0 ~ 12
-		ic2_tier = 3
 
 	[energyHatch.big]
 		#Energy storage size of the energy hatch.
@@ -124,12 +104,6 @@
 		# Default: 8192
 		# Range: > 1
 		transfer_rate = 8192
-		#Defines the IC2 output-voltage tier. 
-		#Only affects the power the output hatches will output power as. 
-		#0 = 'ULV' = 8 EU/t, 1 = 'LV' = 32 EU/t, 2 = 'MV' = 128 EU/t, ...
-		# Default: 4
-		# Range: 0 ~ 12
-		ic2_tier = 4
 
 	[energyHatch.huge]
 		#Energy storage size of the energy hatch.
@@ -141,12 +115,6 @@
 		# Default: 32768
 		# Range: > 1
 		transfer_rate = 32768
-		#Defines the IC2 output-voltage tier. 
-		#Only affects the power the output hatches will output power as. 
-		#0 = 'ULV' = 8 EU/t, 1 = 'LV' = 32 EU/t, 2 = 'MV' = 128 EU/t, ...
-		# Default: 5
-		# Range: 0 ~ 12
-		ic2_tier = 5
 
 	[energyHatch.ludicrous]
 		#Energy storage size of the energy hatch.
@@ -158,12 +126,6 @@
 		# Default: 131072
 		# Range: > 1
 		transfer_rate = 131072
-		#Defines the IC2 output-voltage tier. 
-		#Only affects the power the output hatches will output power as. 
-		#0 = 'ULV' = 8 EU/t, 1 = 'LV' = 32 EU/t, 2 = 'MV' = 128 EU/t, ...
-		# Default: 6
-		# Range: 0 ~ 12
-		ic2_tier = 6
 
 	[energyHatch.ultimate]
 		#Energy storage size of the energy hatch.
@@ -175,12 +137,6 @@
 		# Default: 131072
 		# Range: > 1
 		transfer_rate = 131072
-		#Defines the IC2 output-voltage tier. 
-		#Only affects the power the output hatches will output power as. 
-		#0 = 'ULV' = 8 EU/t, 1 = 'LV' = 32 EU/t, 2 = 'MV' = 128 EU/t, ...
-		# Default: 6
-		# Range: 0 ~ 12
-		ic2_tier = 6
 
 	[energyHatch.Display]
 		#Set to true, if the standard 'energy' FE (or RF) should be displayed in the tooltip of the energy hatch along with its transmission rates.
@@ -239,44 +195,50 @@
 		# Range: > 1
 		size = 32000
 
-	[itemBus.tiny]
-		#Slot number of the item bus
-		# Default: 1
+	[experienceHatch.tiny]
+		#Defines the Experience Hatch
+		# Default: 1000
 		# Range: > 1
-		size = 1
+		capacity = 1000
 
-	[itemBus.small]
-		#Slot number of the item bus
-		# Default: 4
+	[experienceHatch.small]
+		#Defines the Experience Hatch
+		# Default: 4000
 		# Range: > 1
-		size = 4
+		capacity = 4000
 
-	[itemBus.normal]
-		#Slot number of the item bus
-		# Default: 6
+	[experienceHatch.normal]
+		#Defines the Experience Hatch
+		# Default: 10000
 		# Range: > 1
-		size = 6
+		capacity = 10000
 
-	[itemBus.reinforced]
-		#Slot number of the item bus
-		# Default: 9
+	[experienceHatch.reinforced]
+		#Defines the Experience Hatch
+		# Default: 20000
 		# Range: > 1
-		size = 9
+		capacity = 20000
 
-	[itemBus.big]
-		#Slot number of the item bus
-		# Default: 12
+	[experienceHatch.big]
+		#Defines the Experience Hatch
+		# Default: 45000
 		# Range: > 1
-		size = 12
+		capacity = 45000
 
-	[itemBus.huge]
-		#Slot number of the item bus
-		# Default: 16
+	[experienceHatch.huge]
+		#Defines the Experience Hatch
+		# Default: 80000
 		# Range: > 1
-		size = 16
+		capacity = 80000
 
-	[itemBus.ludicrous]
-		#Slot number of the item bus
-		# Default: 32
+	[experienceHatch.ludicrous]
+		#Defines the Experience Hatch
+		# Default: 160000
 		# Range: > 1
-		size = 32
+		capacity = 160000
+
+	[experienceHatch.vacuum]
+		#Defines the Experience Hatch
+		# Default: 320000
+		# Range: > 1
+		capacity = 320000
